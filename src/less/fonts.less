@@ -4,7 +4,7 @@
   text-shadow: 1px 1px 2px @color;
 }
 
-.colors(@bg, @fg, @link) {
+.colors(@bg; @fg; @link) {
   color: @fg;
   background-color: @bg;
   a { color: @link; }
@@ -15,7 +15,7 @@
 }
 
 
-.font(@family, @src, @weight, @style) {
+.font(@family; @src; @weight; @style) {
   @font-face {
       font-family: @family;
       src: url( @src );
@@ -26,44 +26,44 @@
 }
 
 .font(
-  gentium-plus,
-  "https://raw.github.com/typesource/GentiumPlus/master/web/GentiumPlus-I.woff",
-  normal,
+  gentium-plus;
+  "https://raw.github.com/typesource/GentiumPlus/master/web/GentiumPlus-I.woff";
+  normal;
   italic
 );
 
 .font(
-  gentium-plus,
-  "https://raw.github.com/typesource/GentiumPlus/master/web/GentiumPlus-R.woff",
-  normal,
+  gentium-plus;
+  "https://raw.github.com/typesource/GentiumPlus/master/web/GentiumPlus-R.woff";
+  normal;
   normal
 );
 
 .font(
-  league-gothic,
-  "https://raw.github.com/typesource/league-gothic/master/webfonts/leaguegothic-regular-webfont.woff",
-  normal,
+  league-gothic;
+  "https://raw.github.com/typesource/league-gothic/master/webfonts/leaguegothic-regular-webfont.woff";
+  normal;
   normal
 );
 
 .font(
-  chunkfive,
-  "https://raw.github.com/typesource/chunk/master/webfonts/Chunkfive-webfont.woff",
-  bold,
+  chunkfive;
+  "https://raw.github.com/typesource/chunk/master/webfonts/Chunkfive-webfont.woff";
+  bold;
   normal
 );
 
 .font(
-  fanwood-text,
-  "https://raw.github.com/typesource/fanwood/master/webfonts/fanwood_text-webfont.woff",
-  normal,
+  fanwood-text;
+  "https://raw.github.com/typesource/fanwood/master/webfonts/fanwood_text-webfont.woff";
+  normal;
   normal
 );
 
 .font(
-  fanwood-text,
-  "https://raw.github.com/typesource/fanwood/master/webfonts/fanwood_text_italic-webfont.woff",
-  normal,
+  fanwood-text;
+  "https://raw.github.com/typesource/fanwood/master/webfonts/fanwood_text_italic-webfont.woff";
+  normal;
   italic
 );
 
@@ -76,7 +76,7 @@
     font-weight: 500;
   }
 
-  .colors(@secondary-a-2, @almost-white, @complement-5);
+  .colors(@secondary-a-2; @almost-white; @complement-5);
 }
 
 .chunkfive-and-fanwood-text {
@@ -86,5 +86,5 @@
     font-size: 2.4em;
   }
   @bg: mix(@secondary-b-2, white, 20%);
-  .colors(@bg, #666, @complement-3);
+  .colors(@bg; #666; @complement-3);
 }
