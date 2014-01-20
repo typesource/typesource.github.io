@@ -1,3 +1,5 @@
+/* Palette color codes */
+/* end */
 @font-face {
   font-family: gentium-plus;
   src: url("https://raw.github.com/typesource/GentiumPlus/master/web/GentiumPlus-I.woff");
@@ -64,10 +66,10 @@
 .league-gothic-and-gentium {
   font-family: gentium-plus;
   color: #f2f2f2;
-  background-color: #216477;
-  text-shadow: 1px 1px 2px #16424f;
-  border-bottom: 1px solid #16424f;
-  border-top: 1px solid #2c869f;
+  background-color: #284c61;
+  text-shadow: 1px 1px 2px #19303d;
+  border-bottom: 1px solid #19303d;
+  border-top: 1px solid #376885;
 }
 .league-gothic-and-gentium h1 {
   font-family: league-gothic;
@@ -75,36 +77,36 @@
   font-size: 3.6em;
 }
 .league-gothic-and-gentium a {
-  color: #ff8073;
+  color: #f07d8d;
 }
 .chunkfive-and-fanwood-text {
   font-family: fanwood-text;
-  color: #666666;
-  background-color: #f2e4d6;
-  text-shadow: 1px 1px 2px #f8f1e9;
-  border-bottom: 1px solid #e6cbaf;
-  border-top: 1px solid #fefdfd;
+  color: #74756c;
+  background-color: #e9ead7;
+  text-shadow: 1px 1px 2px #d6d8b6;
+  border-bottom: 1px solid #d6d8b6;
+  border-top: 1px solid #fbfcf9;
 }
 .chunkfive-and-fanwood-text h1 {
   font-family: chunkfive;
   font-size: 2.4em;
 }
 .chunkfive-and-fanwood-text a {
-  color: #a61000;
+  color: #720211;
 }
 .goudy-bookletter-1911 {
-  color: #444444;
-  background-color: #dff1f5;
-  text-shadow: 1px 1px 2px #f3fafb;
-  border-bottom: 1px solid #b8dfea;
-  border-top: 1px solid #ffffff;
+  color: #44494d;
+  background-color: #a9b7c0;
+  text-shadow: 1px 1px 2px #b8c4cb;
+  border-bottom: 1px solid #8c9faa;
+  border-top: 1px solid #c6d0d5;
 }
 .goudy-bookletter-1911 h1 {
   font-weight: 100;
   letter-spacing: 0.08em;
 }
 .goudy-bookletter-1911 a {
-  color: #007d1c;
+  color: #1a6602;
 }
 body {
   font-family: "Helvetica Neue", sans-serif;
@@ -134,7 +136,7 @@ h5 {
 }
 a {
   text-decoration: none;
-  color: #39aecf;
+  color: #499dcf;
 }
 .sm {
   font-size: 0.75em;
