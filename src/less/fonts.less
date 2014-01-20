@@ -12,6 +12,8 @@
   @light-contrast: lighten(@bg, 20%);
   @contrast-color: contrast(@fg, darken(@bg, 10%), lighten(@bg, 5%));
   .shadowed(@contrast-color);
+  border-bottom: 1px solid darken(@bg, 10%);
+  border-top: 1px solid lighten(@bg, 10%);
 }
 
 
@@ -67,6 +69,13 @@
   italic
 );
 
+.font(
+  goudy-bookletter-1911;
+  "https://raw.github.com/typesource/goudy-bookletter-1911/master/webfonts/goudy_bookletter_1911-webfont.woff";
+  normal;
+  normal
+);
+
 .league-gothic-and-gentium {
 
   .gentium-plus;
@@ -74,6 +83,7 @@
   h1 {
     .league-gothic;
     font-weight: 500;
+    font-size: 3.6em;
   }
 
   .colors(@secondary-a-2; @almost-white; @complement-5);
@@ -87,4 +97,13 @@
   }
   @bg: mix(@secondary-b-2, white, 20%);
   .colors(@bg; #666; @complement-3);
+}
+
+.goudy-bookletter-1911 {
+  h1 {
+    font-weight: 100;
+    letter-spacing: 0.08em;
+  }
+  @bg: mix(@secondary-a-5, white, 20%);
+  .colors(@bg; #444; @primary-3);
 }

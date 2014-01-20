@@ -52,15 +52,27 @@
 .fanwood-text {
   font-family: fanwood-text;
 }
+@font-face {
+  font-family: goudy-bookletter-1911;
+  src: url("https://raw.github.com/typesource/goudy-bookletter-1911/master/webfonts/goudy_bookletter_1911-webfont.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.goudy-bookletter-1911 {
+  font-family: goudy-bookletter-1911;
+}
 .league-gothic-and-gentium {
   font-family: gentium-plus;
   color: #f2f2f2;
   background-color: #216477;
   text-shadow: 1px 1px 2px #16424f;
+  border-bottom: 1px solid #16424f;
+  border-top: 1px solid #2c869f;
 }
 .league-gothic-and-gentium h1 {
   font-family: league-gothic;
   font-weight: 500;
+  font-size: 3.6em;
 }
 .league-gothic-and-gentium a {
   color: #ff8073;
@@ -70,6 +82,8 @@
   color: #666666;
   background-color: #f2e4d6;
   text-shadow: 1px 1px 2px #f8f1e9;
+  border-bottom: 1px solid #e6cbaf;
+  border-top: 1px solid #fefdfd;
 }
 .chunkfive-and-fanwood-text h1 {
   font-family: chunkfive;
@@ -77,6 +91,20 @@
 }
 .chunkfive-and-fanwood-text a {
   color: #a61000;
+}
+.goudy-bookletter-1911 {
+  color: #444444;
+  background-color: #dff1f5;
+  text-shadow: 1px 1px 2px #f3fafb;
+  border-bottom: 1px solid #b8dfea;
+  border-top: 1px solid #ffffff;
+}
+.goudy-bookletter-1911 h1 {
+  font-weight: 100;
+  letter-spacing: 0.08em;
+}
+.goudy-bookletter-1911 a {
+  color: #007d1c;
 }
 body {
   font-family: "Helvetica Neue", sans-serif;
