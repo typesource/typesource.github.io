@@ -108,3 +108,11 @@ a {
   text-decoration: none;
   color: #39aecf;
 }
+.sm {
+  font-size: 0.75em;
+  line-height: 1.95em;
+}
+.lg {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
