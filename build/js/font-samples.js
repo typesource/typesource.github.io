@@ -1,0 +1,1 @@
+(function(){var e=document.querySelector("#row-template").innerHTML,t=sampleArray.map(function(t){var n=t.replace(/ /g,"-").toLowerCase();return e.replace("##class##",n).replace("##title##",t)}).join("\n");document.querySelector("#samples").innerHTML=t})();

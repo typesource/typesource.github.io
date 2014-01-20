@@ -1,0 +1,110 @@
+@font-face {
+  font-family: gentium-plus;
+  src: url("https://raw.github.com/typesource/GentiumPlus/master/web/GentiumPlus-I.woff");
+  font-weight: normal;
+  font-style: italic;
+}
+.gentium-plus {
+  font-family: gentium-plus;
+}
+@font-face {
+  font-family: gentium-plus;
+  src: url("https://raw.github.com/typesource/GentiumPlus/master/web/GentiumPlus-R.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.gentium-plus {
+  font-family: gentium-plus;
+}
+@font-face {
+  font-family: league-gothic;
+  src: url("https://raw.github.com/typesource/league-gothic/master/webfonts/leaguegothic-regular-webfont.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.league-gothic {
+  font-family: league-gothic;
+}
+@font-face {
+  font-family: chunkfive;
+  src: url("https://raw.github.com/typesource/chunk/master/webfonts/Chunkfive-webfont.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+.chunkfive {
+  font-family: chunkfive;
+}
+@font-face {
+  font-family: fanwood-text;
+  src: url("https://raw.github.com/typesource/fanwood/master/webfonts/fanwood_text-webfont.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.fanwood-text {
+  font-family: fanwood-text;
+}
+@font-face {
+  font-family: fanwood-text;
+  src: url("https://raw.github.com/typesource/fanwood/master/webfonts/fanwood_text_italic-webfont.woff");
+  font-weight: normal;
+  font-style: italic;
+}
+.fanwood-text {
+  font-family: fanwood-text;
+}
+.league-gothic-and-gentium {
+  font-family: gentium-plus;
+  color: #f2f2f2;
+  background-color: #216477;
+  text-shadow: 1px 1px 2px #16424f;
+}
+.league-gothic-and-gentium h1 {
+  font-family: league-gothic;
+  font-weight: 500;
+}
+.league-gothic-and-gentium a {
+  color: #ff8073;
+}
+.chunkfive-and-fanwood-text {
+  font-family: fanwood-text;
+  color: #666666;
+  background-color: #d1f6d9;
+  text-shadow: 1px 1px 2px #e6faea;
+}
+.chunkfive-and-fanwood-text h1 {
+  font-family: chunkfive;
+  font-size: 2.4em;
+}
+.chunkfive-and-fanwood-text a {
+  color: #a61000;
+}
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 21px;
+  line-height: 1.7em;
+  margin: 0;
+}
+.wrapper > div > div > div,
+.wrapper .inner {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lorem {
+  padding: 8% 2%;
+}
+h1 {
+  font-size: 3em;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.7em;
+  margin: 0.4em 0;
+}
+a {
+  text-decoration: none;
+  color: #39aecf;
+}

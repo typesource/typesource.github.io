@@ -1,0 +1,90 @@
+@almost-white: #f2f2f2;
+
+.shadowed(@color: #333) {
+  text-shadow: 1px 1px 2px @color;
+}
+
+.colors(@bg, @fg, @link) {
+  color: @fg;
+  background-color: @bg;
+  a { color: @link; }
+  @dark-contrast: darken(@bg, 20%);
+  @light-contrast: lighten(@bg, 20%);
+  @contrast-color: contrast(@fg, darken(@bg, 10%), lighten(@bg, 5%));
+  .shadowed(@contrast-color);
+}
+
+
+.font(@family, @src, @weight, @style) {
+  @font-face {
+      font-family: @family;
+      src: url( @src );
+      font-weight: @weight;
+      font-style: @style;
+  }
+  .@{family} { font-family: @family; }
+}
+
+.font(
+  gentium-plus,
+  "https://raw.github.com/typesource/GentiumPlus/master/web/GentiumPlus-I.woff",
+  normal,
+  italic
+);
+
+.font(
+  gentium-plus,
+  "https://raw.github.com/typesource/GentiumPlus/master/web/GentiumPlus-R.woff",
+  normal,
+  normal
+);
+
+.font(
+  league-gothic,
+  "https://raw.github.com/typesource/league-gothic/master/webfonts/leaguegothic-regular-webfont.woff",
+  normal,
+  normal
+);
+
+.font(
+  chunkfive,
+  "https://raw.github.com/typesource/chunk/master/webfonts/Chunkfive-webfont.woff",
+  bold,
+  normal
+);
+
+.font(
+  fanwood-text,
+  "https://raw.github.com/typesource/fanwood/master/webfonts/fanwood_text-webfont.woff",
+  normal,
+  normal
+);
+
+.font(
+  fanwood-text,
+  "https://raw.github.com/typesource/fanwood/master/webfonts/fanwood_text_italic-webfont.woff",
+  normal,
+  italic
+);
+
+.league-gothic-and-gentium {
+
+  .gentium-plus;
+
+  h1 {
+    .league-gothic;
+    font-weight: 500;
+  }
+
+  .colors(@secondary-a-2, @almost-white, @complement-5);
+}
+
+.chunkfive-and-fanwood-text {
+  .fanwood-text;
+  h1 {
+    .chunkfive;
+    font-size: 2.4em;
+  }
+  @bg: mix(@primary-5, white, 30%);
+  .colors(@bg, #666, @complement-3);
+}

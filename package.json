@@ -1,0 +1,9 @@
+{
+  "name": "typesource",
+  "url": "https://github.com/typesource/typesource.github.io",
+  "repository": "git@github.com:typesource/typesource.github.io.git",
+  "license": "MIT",
+  "dependencies": {
+    "mustache": "~0.8.1"
+  }
+}
