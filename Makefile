@@ -8,5 +8,5 @@ clean:
 
 assets:
 	mkdir -p build/css build/js
-	$(NPM)/lessc src/less/all.less > build/css/all.css
+	$(NPM)/lessc --compress src/less/all.less > build/css/all.css
 	uglifyjs src/js/font-samples.js > build/js/font-samples.js
