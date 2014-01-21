@@ -17,11 +17,13 @@ body {
 }
 
 .description {
-  color: #555;
+  color: #777;
   h1 {
     font-weight: 500;
     color: #aaa;
-    letter-spacing: 0.2em;
+    letter-spacing: -0.02em;
+    line-height: 1em;
+    margin-bottom: 0;
   }
 }
 
@@ -41,6 +43,11 @@ h1, h2, h3, h4, h5 {
 a {
   text-decoration: none;
   color: @secondary-a-4;
+
+  &:hover {
+    color: lighten(@secondary-a-4, 10%);
+    // text-decoration: underline;
+  }
 }
 
 .sm {

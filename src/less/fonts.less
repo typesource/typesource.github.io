@@ -7,7 +7,12 @@
 .theme(@bg; @fg; @link) {
   color: @fg;
   background-color: @bg;
-  a { color: @link; }
+  a {
+    color: @link;
+    &:hover {
+      color: lighten(@link, 10%);
+    }
+  }
   @dark-contrast: darken(@bg, 20%);
   @light-contrast: lighten(@bg, 20%);
   @contrast-color: contrast(@fg, darken(@bg, 10%), lighten(@bg, 5%));
@@ -80,7 +85,6 @@
 );
 
 .league-gothic-and-gentium {
-
   .gentium-plus;
 
   h1 {
@@ -110,5 +114,5 @@
   }
   @bg: mix(@secondary-a-2, white, 40%);
   @fg: mix(@bg, black, 40%);
-  .theme(@bg; @fg; @primary-3);
+  .theme(@bg; @fg; @complement-3);
 }
