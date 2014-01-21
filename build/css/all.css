@@ -79,6 +79,9 @@
 .league-gothic-and-gentium a {
   color: #f07d8d;
 }
+.league-gothic-and-gentium ::selection {
+  background-color: #25465a;
+}
 .chunkfive-and-fanwood-text {
   font-family: fanwood-text;
   color: #74756c;
@@ -94,6 +97,9 @@
 .chunkfive-and-fanwood-text a {
   color: #720211;
 }
+.chunkfive-and-fanwood-text ::selection {
+  background-color: #e5e6d1;
+}
 .goudy-bookletter-1911 {
   color: #44494d;
   background-color: #a9b7c0;
@@ -108,6 +114,9 @@
 .goudy-bookletter-1911 a {
   color: #1a6602;
 }
+.goudy-bookletter-1911 ::selection {
+  background-color: #acbac2;
+}
 body {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 21px;
@@ -119,6 +128,14 @@ body {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+.description {
+  color: #555;
+}
+.description h1 {
+  font-weight: 500;
+  color: #aaa;
+  letter-spacing: 0.2em;
 }
 .lorem {
   padding: 8% 2%;
@@ -139,10 +156,10 @@ a {
   color: #499dcf;
 }
 .sm {
-  font-size: 0.75em;
+  font-size: 0.7em;
   line-height: 1.95em;
 }
 .lg {
-  font-size: 1.25em;
+  font-size: 1.35em;
   line-height: 1.5em;
 }

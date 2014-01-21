@@ -4,7 +4,7 @@
   text-shadow: 1px 1px 2px @color;
 }
 
-.colors(@bg; @fg; @link) {
+.theme(@bg; @fg; @link) {
   color: @fg;
   background-color: @bg;
   a { color: @link; }
@@ -14,6 +14,9 @@
   .shadowed(@contrast-color);
   border-bottom: 1px solid darken(@bg, 10%);
   border-top: 1px solid lighten(@bg, 10%);
+  ::selection {
+    background-color: mix(@bg, @contrast-color, 80%);
+  }
 }
 
 
@@ -86,7 +89,7 @@
     font-size: 3.6em;
   }
 
-  .colors(@secondary-a-2; @almost-white; @complement-5);
+  .theme(@secondary-a-2; @almost-white; @complement-5);
 }
 
 .chunkfive-and-fanwood-text {
@@ -97,7 +100,7 @@
   }
   @bg: mix(@secondary-b-2, white, 20%);
   @fg: mix(@bg, black, 50%);
-  .colors(@bg; @fg; @complement-3);
+  .theme(@bg; @fg; @complement-3);
 }
 
 .goudy-bookletter-1911 {
@@ -107,5 +110,5 @@
   }
   @bg: mix(@secondary-a-2, white, 40%);
   @fg: mix(@bg, black, 40%);
-  .colors(@bg; @fg; @primary-3);
+  .theme(@bg; @fg; @primary-3);
 }
