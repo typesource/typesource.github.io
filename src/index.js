@@ -7,7 +7,8 @@ var view = {
   samples: [
     'League Gothic and Gentium',
     'Chunkfive and Fanwood-text',
-    'Goudy Bookletter 1911'
+    'Goudy Bookletter 1911',
+    'KiriFont And NewsCycle'
   ],
   sampleArray: function(){
     return JSON.stringify(view.samples);

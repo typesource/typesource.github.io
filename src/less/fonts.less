@@ -4,6 +4,8 @@
   text-shadow: 1px 1px 2px @color;
 }
 
+@typesource-url: "https://raw.github.com/typesource";
+
 .theme(@bg; @fg; @link) {
   color: @fg;
   background-color: @bg;
@@ -49,50 +51,70 @@
 
 .font(
   gentium-plus;
-  "https://raw.github.com/typesource/GentiumPlus/master/web/GentiumPlus-I.woff";
+  "@{typesource-url}/GentiumPlus/master/web/GentiumPlus-I.woff";
   normal;
   italic
 );
 
 .font(
   gentium-plus;
-  "https://raw.github.com/typesource/GentiumPlus/master/web/GentiumPlus-R.woff";
+  "@{typesource-url}/GentiumPlus/master/web/GentiumPlus-R.woff";
   normal;
   normal
 );
 
 .font(
   league-gothic;
-  "https://raw.github.com/typesource/league-gothic/master/webfonts/leaguegothic-regular-webfont.woff";
+  "@{typesource-url}/league-gothic/master/webfonts/leaguegothic-regular-webfont.woff";
   normal;
   normal
 );
 
 .font(
   chunkfive;
-  "https://raw.github.com/typesource/chunk/master/webfonts/Chunkfive-webfont.woff";
+  "@{typesource-url}/chunk/master/webfonts/Chunkfive-webfont.woff";
   bold;
   normal
 );
 
 .font(
   fanwood-text;
-  "https://raw.github.com/typesource/fanwood/master/webfonts/fanwood_text-webfont.woff";
+  "@{typesource-url}/fanwood/master/webfonts/fanwood_text-webfont.woff";
   normal;
   normal
 );
 
 .font(
   fanwood-text;
-  "https://raw.github.com/typesource/fanwood/master/webfonts/fanwood_text_italic-webfont.woff";
+  "@{typesource-url}/fanwood/master/webfonts/fanwood_text_italic-webfont.woff";
   normal;
   italic
 );
 
 .font(
   goudy-bookletter-1911;
-  "https://raw.github.com/typesource/goudy-bookletter-1911/master/webfonts/goudy_bookletter_1911-webfont.woff";
+  "@{typesource-url}/goudy-bookletter-1911/master/webfonts/goudy_bookletter_1911-webfont.woff";
   normal;
+  normal
+);
+
+.font(
+  newscycle;
+  "@{typesource-url}/newscycle/master/NewsCycle-Regular.ttf";
+  regular;
+  normal
+);
+.font(
+  newscycle;
+  "@{typesource-url}/newscycle/master/NewsCycle-Bold.ttf";
+  bold;
+  normal
+);
+
+.font(
+  kirifont;
+  "@{typesource-url}/kirifont/master/KiriFont.ttf";
+  bold;
   normal
 );
 
@@ -132,3 +154,22 @@
   @fg: mix(@bg, black, 40%);
   .theme(@bg; @fg; @complement-3);
 }
+
+.kirifont-and-newscycle {
+  .newscycle;
+  .line-heights(1.5em);
+
+  h1 {
+    .kirifont;
+    font-size: 2.1em;
+    text-shadow: 2px 3px 1px darken(@bg, 20%);
+  }
+
+  @bg: mix(@complement-3, white, 80%);
+  @fg: mix(@secondary-a-5, white, 30%);
+  .theme(@bg; @fg; @complement-4);
+  p {
+    letter-spacing: 0.04em;
+  }
+}
+
