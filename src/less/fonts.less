@@ -24,6 +24,18 @@
   }
 }
 
+.line-heights(@size) {
+  line-height: @size;
+  .sm {
+    line-height: @size * 1.15;
+  }
+
+  .lg {
+    line-height: @size * 0.9em;
+  }
+
+}
+
 
 .font(@family; @src; @weight; @style) {
   @font-face {
@@ -86,6 +98,7 @@
 
 .league-gothic-and-gentium {
   .gentium-plus;
+  .line-heights(1.6em);
 
   h1 {
     .league-gothic;
@@ -98,6 +111,8 @@
 
 .chunkfive-and-fanwood-text {
   .fanwood-text;
+  .line-heights(1.8em);
+
   h1 {
     .chunkfive;
     font-size: 2.4em;
@@ -112,6 +127,7 @@
     font-weight: 100;
     letter-spacing: 0.08em;
   }
+  .line-heights(1.3em);
   @bg: mix(@secondary-a-2, white, 40%);
   @fg: mix(@bg, black, 40%);
   .theme(@bg; @fg; @complement-3);

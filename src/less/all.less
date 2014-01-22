@@ -6,6 +6,8 @@ body {
   font-size: 21px;
   line-height: 1.7em;
   margin: 0;
+  background-color: mix(white, @primary-2, 90%);
+  color: mix(white, @secondary-a-2, 45%);
 }
 
 .wrapper {
@@ -17,14 +19,14 @@ body {
 }
 
 .description {
-  color: #777;
   h1 {
+    font-size: 1.7em;
     font-weight: 500;
-    color: #aaa;
     letter-spacing: -0.02em;
     line-height: 1em;
     margin-bottom: 0;
   }
+  p { margin: 0.4em 0 1em; }
 }
 
 .lorem {
@@ -41,11 +43,12 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
+  @link-color: mix(white, @secondary-a-2, 20%);
   text-decoration: none;
-  color: @secondary-a-4;
+  color: @link-color;
 
   &:hover {
-    color: lighten(@secondary-a-4, 10%);
+    color: darken(@link-color, 10%);
     // text-decoration: underline;
   }
 }
