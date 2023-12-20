@@ -4,7 +4,7 @@
   "repository": "git@github.com:typesource/typesource.github.io.git",
   "license": "MIT",
   "dependencies": {
-    "mustache": "~0.8.1",
-    "less": "~1.6.1"
+    "less": "~1.6.1",
+    "mustache": "~0.8.1"
   }
 }
